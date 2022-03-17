@@ -16,7 +16,6 @@ class SiswaController extends Controller
     public function index()
     {
         $siswa = Siswa::all();
-        // return $siswa;
         return response()->json([
             'message'=>'Success Get Data',
             'data'=>$siswa,
